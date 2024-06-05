@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interior Design Mastery</title>
+</head>
+<body>
+
+<nav class="bg-white-100 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="flex items-center">
+            <img src="assets/logo.png" width="150" height="auto" alt="logo">
+            <span class="text-xl font-semibold ml-2">SIMPLY HOME <span class="hidden md:inline">DECORATORS</span></span>
+        </a>
+        <button class="block md:hidden text-gray-800 focus:outline-none" id="menu-display">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+        <div class="hidden md:flex md:items-center" id="menu">
+            <a href="home.html" class="text-gray-800 hover:text-blue-600 ml-4">HOME</a>
+            <a href="about.html" class="text-gray-800 hover:text-blue-600 ml-4">ABOUT US</a>
+            <a href="projects.html" class="text-gray-800 hover:text-blue-600 ml-4">PROJECTS</a>
+            <a href="contact.html" class="text-gray-800 hover:text-blue-600 ml-4">CONTACT</a>
+        </div>
+    </div>
+</nav>
+
+<header class="header bg-cover bg-center py-20" style="background-image: url('assets/header.jpg');">
+    <div class="container mx-auto text-center">
+        <div class="bg-black bg-opacity-50 text-white p-6 inline-block">
+            <h4 class="text-2xl">LIVE BEAUTIFULLY</h4>
+            <hr class="border-gray-300 my-2">
+            <h1 class="text-4xl font-italic">Design that makes you feel <span class="font-bold">at home.</span></h1>
+        </div>
+    </div>
+</header>
+
+<section class="container mx-auto my-12">
+    <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-6 md:mb-0">
+            <p class="text-2xl">At Simply Home Decorators, we are passionate about transforming houses into dream homes. With our expertise in interior design, we strive to create spaces that reflect your unique style and personality, while ensuring functionality and comfort.</p>
+            <h4 class="mt-4 font-semibold text-3xl">Our dedicated team works closely with clients to understand vision, preferences, and lifestyle. Whether you are seeking a modern, minimalist, or rustic atmosphere, we bring your ideas to life.</h4>
+            <p class="mt-4 text-2xl">From concept to completion, we meticulously curate every aspect of the design process. We carefully select colors, textures, furniture, lighting, and decor elements to achieve the desired ambiance and create a harmonious living environment.</p>
+        </div>
+        <div class="md:w-1/3 border border-gray-300 p-3 rounded">
+            <img src="assets/about.jpg" alt="about" class="w-full rounded shadow">
+        </div>
+        
+    </div>
+</section>
+
+<section class="bg-gray-100 py-12 banner">
+    <div class="container mx-auto text-center">
+        <h4 class="text-2xl mb-2">Interior Design Studio</h4>
+        <p>Based in North Vancouver, B.C</p>
+    </div>
+</section>
+
+<section class="container mx-auto my-12">
+    <div class="text-center mb-8">
+        <p class="text-gray-600">View our</p>
+        <h4 class="text-2xl font-bold">PORTFOLIO</h4>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="assets/display1.jpg" alt="display" class="w-full rounded shadow">
+        <img src="assets/display2.jpg" alt="display" class="w-full rounded shadow">
+        <img src="assets/portfolio1.jpg" alt="portfolio" class="w-full rounded shadow">
+        <img src="assets/portifolio2.jpg" alt="portfolio" class="w-full rounded shadow">
+    </div>
+</section>
+
+<section class="container mx-auto my-12">
+    <div class="text-center mb-8">
+        <h4 class="text-2xl font-bold">ABOUT US</h4>
+        <p class="text-gray-600">Who are we</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="assets/display3.jpg" alt="display" class="w-full rounded shadow">
+        <img src="assets/about1.jpg" alt="display" class="w-full rounded shadow">
+        <img src="assets/about2.jpg" alt="display" class="w-full rounded shadow">
+        <img src="assets/about3.jpg" alt="display" class="w-full rounded shadow">
+    </div>
+</section>
+
+<footer class="bg-white-100 py-12">
+    <div class="container mx-auto text-center md:text-left">
+        <img src="assets/logo.png" alt="footer logo" class="mx-auto md:mx-0 mb-4">
+        <h4 class="text-xl font-semibold mb-4">Ready to start your home decorating project?</h4>
+        <p>Take the first step towards transforming your home by reaching out to us for a consultation. Let us embark on this exciting journey together to create a space that truly represents your style, personality, and aspirations.</p>
+        <button class="btn bg-gray-300 text-white px-4 py-2 mt-4 rounded">SCHEDULE YOUR CALL</button>
+    </div>
+    <div class="mt-8">
+        <p class="text-center text-gray-600">&copy; Home Decor Mastery. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('menu-display').addEventListener('click', () => {
+        document.getElementById('menu').classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
